@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age-Adaptive Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Age-Adaptive Habit Tracker</h1>
+    <p>Select your age and start adding habits!</p>
+
+    <div class="tracker-box" id="trackerBox">
+      <select id="ageGroup">
+        <option value="">-- Choose Age --</option>
+        <option value="1-8">Ages 1–8</option>
+        <option value="8-13">Ages 8–13</option>
+        <option value="13-18">Ages 13–18</option>
+      </select>
+
+      <h2 id="modeTitle">Add tasks to get started</h2>
+
+      <div class="input-group">
+        <input type="text" id="newTask" placeholder="Add new habit">
+        <button id="addBtn">Add Habit</button>
+      </div>
+
+      <div id="habitList"></div>
+      <div class="progress" id="progressText"></div>
+      <div class="reward" id="rewardText"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
